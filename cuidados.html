@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEB | Cuidados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <header class="encabezado">
+        <nav class="menu">
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo KEB">
+        <h2>KEB</h2><small>Kit Ecológico Biodegradable</small>
+    </div>
+
+            <a href="index.html" class="logo">
+            </a>
+
+            <div class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="cuidados.html" class="activo">Cuidados</a>
+                <a href="compra.html" class="boton-menu">Compra</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="presentacion">
+        <span>GUÍA DE CULTIVO KEB</span>
+        <h1>Cuida y haz crecer tus semillas</h1>
+
+        <p>
+            Cada planta necesita cuidados diferentes.
+            Descubre cómo sembrar, regar y cuidar tus semillas
+            para acompañarlas durante su crecimiento.
+        </p>
+    </section>
+
+
+    <!-- TARJETAS -->
+    <main class="contenedor">
+
+        <div class="tarjetas" id="contenedorTarjetas"></div>
+
+    </main>
+
+
+    <!-- VENTANA DE CUIDADOS -->
+    <div class="modal" id="modal">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar" onclick="cerrarCuidados()">&times;</button>
+
+            <img id="imagenModal" src="" alt="">
+
+            <h2 id="nombreModal"></h2>
+
+            <div id="informacionModal"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <h2>KEB</h2>
+        <p>Kit Ecológico Biodegradable</p>
+        <p>Cultiva, aprende y haz crecer un futuro más verde.</p>
+
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="cuidados.html">Cuidados</a>
+            <a href="compra.html">Compra</a>
+        </div>
+    </footer>
+
+
+    <script src="cuidados.js"></script>
+
+</body>
+</html>

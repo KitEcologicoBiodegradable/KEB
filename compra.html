@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEB | Comprar kit</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+    <div class="logo">
+        <img src="imagenes/logo.png" alt="Logo KEB">
+        <h2>KEB</h2><small>Kit Ecológico Biodegradable</small>
+    
+    </div>
+                <a href="index.html">Inicio</a>
+                <a href="cuidados.html">Cuidados</a>
+                <a href="compra.html">Compra</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="producto">
+            <div class="imagen-producto">
+                <img src="imagenes/productofinal.png"
+                     alt="Kit Ecológico Biodegradable KEB">
+            </div>
+
+            <div class="informacion">
+                <span class="etiqueta">Cultiva de manera ecológica</span>
+                <h1>Kit Ecológico Biodegradable</h1>
+
+                <p>
+                    Comienza tu propio cultivo desde casa con nuestro
+                    kit de germinación. Incluye una maceta biodegradable,
+                    semillas y sustrato para iniciar tu experiencia.
+                </p>
+
+                <h2 class="precio">$142.25 MXN</h2>
+
+                <p class="nota">
+                    Selecciona la semilla que deseas recibir y
+                    personaliza tu pedido.
+                </p>
+            </div>
+        </section>
+
+        <section class="compra">
+            <h2>Personaliza tu kit</h2>
+
+            <label for="semilla">Selecciona tu semilla:</label>
+
+            <select id="semilla">
+                <option value="">Elige una semilla</option>
+                <option value="Tomate">Tomate</option>
+                <option value="Chayote">Chayote</option>
+                <option value="Pepino">Pepino</option>
+                <option value="Lechuga">Lechuga</option>
+                <option value="Chile verde">Chile verde</option>
+                <option value="Chile habanero">Chile habanero</option>
+                <option value="Lavanda">Lavanda</option>
+                <option value="Albahaca">Albahaca</option>
+                <option value="Zanahoria">Zanahoria</option>
+                <option value="Rábano">Rábano</option>
+            </select>
+
+            <label for="cantidad">Cantidad de kits:</label>
+            <input type="number" id="cantidad" min="1" value="1">
+
+            <div class="resumen">
+                <h3>Resumen de compra</h3>
+                <p>Precio por kit: $142.25 MXN</p>
+                <p>Semilla: <span id="resumenSemilla">No seleccionada</span></p>
+                <p>Cantidad: <span id="resumenCantidad">1</span></p>
+
+                <div class="total">
+                    Total: $<span id="total">142.25</span> MXN
+                </div>
+            </div>
+        </section>
+
+        <section class="datos">
+            <h2>Datos del comprador</h2>
+
+            <form id="formCompra">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="direccion">Dirección de entrega:</label>
+                <textarea id="direccion" rows="3" required></textarea>
+
+                <label for="pago">Método de pago:</label>
+                <select id="pago" required>
+                    <option value="">Selecciona un método</option>
+                    <option value="Transferencia bancaria">Transferencia bancaria</option>
+                    <option value="Pago al recibir">Pago al recibir</option>
+                    <option value="Tarjeta">Tarjeta bancaria (demostración)</option>
+                </select>
+
+                <button type="submit">Realizar pedido</button>
+
+            </form>
+
+            <p id="mensaje"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>KEB | Kit Ecológico Biodegradable</p>
+        <p>Pequeñas semillas, grandes cambios.</p>
+    </footer>
+
+    <script src="compra.js"></script>
+</body>
+</html>
